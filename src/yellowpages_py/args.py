@@ -10,7 +10,7 @@ def get_args():
     parser.add_argument('-o', '--output', type=str,
                         default='data/contacts', help='Output file name')
 
-    parser.add_argument('-f', '--format', type=list or str, default=[
+    parser.add_argument('-f', '--format', type=str, default=[
                         'json', 'csv'], nargs='+', choices=['json', 'csv'], help='Output format')
 
     parser.add_argument('-w', '--website', action='store_true',
